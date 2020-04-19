@@ -1,0 +1,108 @@
+<resources>
+    <string name="app_name">ECE App</string>
+    <string name="spin">Please select a daycare</string>
+    <string name="create_new_account">Create New Account</string>
+    <string name="first_name">First Name:</string>
+    <string name="confirm_password">Confirm Password:</string>
+    <string name="submit">Submit</string>
+    <string name="daycare">Daycare:</string>
+    <string name="administrator">Administrator</string>
+    <string name="password">Password:</string>
+    <string name="last_name">Last Name:</string>
+    <string name="username">Username:</string>
+    <string name="role">Role:</string>
+    <string name="teacher">Teacher</string>
+    <string name="login_preference">com.example.eceapp_login_preference</string>
+    <string name="login_status_preference">com.example.eceapp_login_status_preference</string>
+    <string name="addStudent">Add a student to the system</string>
+    <string name="first_name_student">First Name</string>
+    <string name="first_name_hint">First Name</string>
+    <string name="select_your_option">Select Your Option</string>
+    <string name="forms">Forms</string>
+    <string name="logout">Logout</string>
+    <string name="resources_manuals">Resources/Manuals</string>
+    <string name="create_new_student">Create new Student</string>
+    <string name="view_student_list">View Student List</string>
+    <string name="btnEditAccount">Edit Accounts</string>
+    <string name="edit_your_account_here">Edit Your Account Here</string>
+    <string name="accountSpinner">Select An Account To Edit</string>
+
+    <string name="textview">TextView</string>
+    <string name="textviewRole">Change Role:</string>
+    <string name="textviewPasswordSelected">Change Password:</string>
+    <string name="passwordSelected">" "</string>
+    <string name="textviewUsername">Username:</string>
+    <string name="textviewAdmin">Role:</string>
+    <string name="textviewDisplayUsername">TextView</string>
+    <string name="textviewDisplayRole">TextView</string>
+    <string name="buttonUpdate">Save Changes</string>
+    <string name="buttonBack">Back</string>
+    <string name="btnAdminOptions">Admin Options</string>
+    <string name="emergency_info">Emergency Info</string>
+    <string name="buttonAdminOptions">Admin Options</string>
+    <string name="create_account">Create Account</string>
+    <string name="edit_accounts">Edit Accounts</string>
+    <string name="edit_forms">Edit Forms</string>
+    <string name="back">Back</string>
+    <string name="btnNewForm">New Form</string>
+    <string name="btnBackEditForm">Back</string>
+    <string name="textSelectForm">Select A Form To Edit</string>
+    <string name="form_description">Form Description:</string>
+    <string name="textviewLocationDisplay">TextView</string>
+    <string name="form_location">Form Location:</string>
+    <string name="textviewDescriptionDisplay">TextView</string>
+    <string name="update_description">Update Description:</string>
+    <string name="textInputDescrip" />
+    <string name="TeacherAllowedYes">Yes</string>
+    <string name="teacher_form">Teacher Form?</string>
+    <string name="TeacherAllowedNo">No</string>
+    <string name="student_form">Student Form?</string>
+    <string name="StudentAllowedYes">Yes</string>
+    <string name="studentallowedno">No</string>
+    <string name="formDelete">Delete</string>
+    <string name="save_changes">Save Changes</string>
+    <string name="title_activity_forms_admin">FormsAdmin</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+    <string name="title_activity_form_settings">Settings</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="title_activity_view_forms_settings">viewFormsSettings</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="french">Français</string>
+    <string name="password_auto">Password</string>
+    <string name="early_childhood_education_documentation">Early Childhood Education Documentation</string>
+    <string name="btnLogin">Login</string>
+    <string name="username_auto">Username</string>
+    <string name="is_the_form_active">Is the form active?</string>
+    <string name="active_status">Active Status:</string>
+    <string name="active">Active</string>
+    <string name="inactive">Inactive</string>
+</resources>
+
+

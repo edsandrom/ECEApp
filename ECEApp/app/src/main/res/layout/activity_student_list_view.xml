@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".StudentListView">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="STUDENT LIST"
+        android:textAlignment="center"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end"
+        android:padding="2dp">
+
+
+        <EditText
+            android:id="@+id/txtKeyWord"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:hint="Keywords"
+            android:inputType="textPersonName"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="12sp" />
+        <Button
+            android:id="@+id/btnSearchStudent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Search"
+            android:textAlignment="viewEnd"
+
+            />
+        <Button
+            android:id="@+id/btnAddNewStudent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Student"
+            android:textAlignment="viewEnd"
+            android:paddingLeft="5dp"
+            />
+        <Button
+            android:id="@+id/btnStudentLVCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:textAlignment="viewEnd"
+            android:paddingLeft="5dp"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end"
+        android:padding="2dp">
+        <TextView
+            android:id="@+id/noStudent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="There is no student"
+            android:visibility="invisible"
+            android:textAlignment="center"
+            />
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/studentListView"
+        >
+
+    </ListView>
+
+
+</LinearLayout>

@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true"
+    android:scrollbars="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textViewSelectForm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="15dp"
+            android:text="@string/textSelectForm"
+            android:textColor="@color/colorPrimaryDark"/>
+
+        <Spinner
+            android:id="@+id/formSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewForm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:text="@string/form_description"
+                android:textColor="@color/colorPrimaryDark"/>
+
+            <TextView
+                android:id="@+id/textViewFormDisplay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/textviewDescriptionDisplay"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewUpdateDesc"
+                android:layout_width="128dp"
+                android:layout_height="34dp"
+                android:layout_marginLeft="20dp"
+                android:text="@string/update_description"
+                android:textColor="@color/colorPrimaryDark"/>
+
+            <EditText
+                android:id="@+id/editTextFormDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:autofillHints=""
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="@string/textInputDescrip"
+                android:hint="Update Description"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewTeacherAllowed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/teacher_form"
+                android:textColor="@color/colorPrimaryDark"/>
+
+            <RadioGroup
+                android:id="@+id/radioGroup2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                >
+
+                <RadioButton
+                    android:id="@+id/rdoTeacherAllowedYes"
+                    android:layout_width="67dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/TeacherAllowedYes"
+                    android:textColor="@color/colorPrimaryDark"/>
+
+                <RadioButton
+                    android:id="@+id/rdoTeacherAllowedNo"
+                    android:layout_width="69dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/TeacherAllowedNo"
+                    android:textColor="@color/colorPrimaryDark"/>
+
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewStudentAllowed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/student_form"
+                android:textColor="@color/colorPrimaryDark"/>
+
+            <RadioGroup
+                android:id="@+id/radioGroup3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="32dp">
+
+                <RadioButton
+                    android:id="@+id/rdoStudentAllowedYes"
+                    android:layout_width="67dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/StudentAllowedYes"
+                    android:textColor="@color/colorPrimaryDark"/>
+
+                <RadioButton
+                    android:id="@+id/rdoStudentAllowedNo"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/studentallowedno"
+                    android:textColor="@color/colorPrimaryDark"/>
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewActiveForm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/is_the_form_active"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                />
+
+            <RadioGroup
+                android:layout_width="84dp"
+                android:layout_height="64dp"
+                android:layout_marginLeft="13dp"
+
+               >
+
+                <RadioButton
+                    android:id="@+id/rdoActiveFormYes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/StudentAllowedYes"
+                    android:textColor="@color/colorPrimaryDark"/>
+
+                <RadioButton
+                    android:id="@+id/rdoActiveFormNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/TeacherAllowedNo"
+                    android:textColor="@color/colorPrimaryDark"/>
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnSaveForm"
+                android:layout_width="106dp"
+                android:layout_height="60dp"
+                android:text="@string/save_changes" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnNewForm"
+                android:layout_width="106dp"
+                android:layout_height="60dp"
+                android:layout_marginRight="30dp"
+                android:text="@string/btnNewForm" />
+
+            <Button
+                android:id="@+id/btnBackForm"
+                android:layout_width="106dp"
+                android:layout_height="60dp"
+                android:text="@string/btnBackEditForm" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
+
+
+
+

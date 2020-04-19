@@ -1,0 +1,105 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="false">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            android:layout_gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/tvNonAuTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="ADD NON-AUTHORIZED PICKUP PEOPLE"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="2dp">
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:text="@string/first_name_student"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="12sp"
+
+                />
+
+            <EditText
+                android:id="@+id/txtNonAuthorizedFirstName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/first_name_hint"
+                android:inputType="textPersonName"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="12sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="2dp">
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:text="Last Name"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="12sp"
+                />
+            <EditText
+                android:id="@+id/txtNonAuthorizedLastname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Last Name"
+                android:inputType="textPersonName"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="12sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"            >
+
+            <Button
+                android:id="@+id/btnAddNonAuthorized"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add Non-Authorized"/>
+            <Button
+                android:id="@+id/btnModifyNonAu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Modify Non-Authorized"
+                android:visibility="gone"/>
+            <Button
+                android:id="@+id/btnNonAuthorizedCancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cancel"/>
+
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

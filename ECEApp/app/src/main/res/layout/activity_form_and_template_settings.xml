@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:fillViewport="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/lblSelectInfo"
+                    android:layout_width="400dp"
+                    android:layout_height="48dp"
+                    android:gravity="center"
+                    android:text="Select Data to Retrieve"
+                    android:textSize="20dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+
+                <RadioGroup
+                    android:id="@+id/rdoGroupUser"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="30dp"
+                    >
+
+                    <TextView
+                        android:id="@+id/userTxtView"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center"
+                        android:singleLine="false"
+                        android:text="Select user type"
+                        android:textColor="@color/colorPrimaryDark"
+                        />
+
+                    <RadioButton
+                        android:id="@+id/rdoStudentRole"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:text="Student"
+                        android:textColor="@color/colorPrimaryDark"/>
+
+                    <RadioButton
+                        android:id="@+id/rdoTeacherRole"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:text="Teacher"
+                        android:textColor="@color/colorPrimaryDark"/>
+
+                </RadioGroup>
+
+                <RadioGroup
+                    android:id="@+id/rdoGroupForms"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_marginTop="10dp"
+                    >
+
+                    <TextView
+                        android:id="@+id/formsTxtView"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center"
+                        android:singleLine="false"
+                        android:text="Select data type"
+
+                        android:textColor="@color/colorPrimaryDark" />
+
+                    <RadioButton
+                        android:id="@+id/rdoTemplateSelect"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:text="Template"
+                        android:textColor="@color/colorPrimaryDark"/>
+
+                    <RadioButton
+                        android:id="@+id/rdoFormSelect"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:text="Forms"
+                        android:textColor="@color/colorPrimaryDark"/>
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:id="@+id/lblSelectUserForm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:gravity="center"
+                    android:text="Select Student / Teacher"
+                    android:textColor="@color/colorPrimaryDark"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+
+                <Spinner
+                    android:id="@+id/spinnerUser"
+                    android:layout_width="300dp"
+                    android:layout_height="48dp"
+                    android:singleLine="false"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:id="@+id/lblSelectForm"
+                    android:layout_width="200dp"
+                    android:layout_height="24dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:gravity="center"
+                    android:text="Forms/Template"
+                    android:textColor="@color/colorPrimaryDark"
+                     />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+
+                <Spinner
+                    android:id="@+id/spinnerTemplates"
+                    android:layout_width="300dp"
+                    android:layout_height="72dp"
+                    android:maxLines="2"
+                    android:scrollHorizontally="false"
+                    android:singleLine="false" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+
+                <CheckBox
+                    android:id="@+id/everyoneChkBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="List All Forms"
+                    android:layout_marginRight="30dp"
+                    android:textColor="@color/colorPrimaryDark"/>
+
+                <CheckBox
+                    android:id="@+id/InactiveItems"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Show Inactive"
+                    android:textColor="@color/colorPrimaryDark"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="30dp">
+
+                <TextView
+                    android:id="@+id/formOrTemplateNameTxtVw"
+                    android:layout_width="250dp"
+                    android:layout_height="64dp"
+                    android:gravity="center"
+                    android:singleLine="false"
+                    android:text=""
+                    android:textSize="16dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    />
+
+                <Button
+                    android:id="@+id/btnOpenFile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Open Selected Form/Template"
+                    android:textSize="14dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="30dp"
+                android:layout_gravity="center">
+
+                <Button
+                    android:id="@+id/btnAddStuForm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add Student Form"
+                    android:textSize="14dp"
+                    android:layout_marginRight="30dp"/>
+
+                <Button
+                    android:id="@+id/btnAddTeacherForm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add Teacher Form"
+                    android:textSize="14dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="30dp"
+                android:layout_gravity="end">
+
+                <Button
+                    android:id="@+id/btnBack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Back"
+                    android:textSize="14dp"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"></LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+

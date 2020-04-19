@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="false">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            android:layout_gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/tvContactTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="ADD CONTACT"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="2dp">
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:text="@string/first_name_student"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="12sp"
+
+                />
+
+            <EditText
+                android:id="@+id/txtContactFirstName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/first_name_hint"
+                android:inputType="textPersonName"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="12sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="2dp">
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:text="Last Name"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="12sp"
+                />
+            <EditText
+                android:id="@+id/txtContactLastname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Last Name"
+                android:inputType="textPersonName"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="12sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="2dp"
+            >
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:text="Relationship"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="12sp"            />
+
+            <Spinner
+                android:id="@+id/spRelationship"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Relationship"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="10sp" />
+
+
+
+
+        </LinearLayout>
+        <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/simpleTableLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="2dp"
+            android:stretchColumns="*"> <!-- stretch the second column of the layout-->
+
+            <!-- first row of the table layout-->
+            <TableRow
+
+                android:id="@+id/firstRow"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <!-- first element of the row-->
+
+                <CheckBox
+                    android:id="@+id/chkPickup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="12dp"
+                    android:onClick="onCheckboxClicked"
+                    android:text="Authorized pickup" />
+                <CheckBox
+                    android:id="@+id/chkEmergency"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="12dp"
+                    android:onClick="onCheckboxClicked"
+                    android:text="Emergency Contact" />
+
+
+
+            </TableRow>
+        </TableLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="2dp">
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:text="Home Phone"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="12sp"            />
+
+            <EditText
+                android:id="@+id/txtHomePhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="HomePhone"
+                android:inputType="number"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="12sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="2dp">
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:text="Cell Phone"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="12sp"            />
+
+            <EditText
+                android:id="@+id/txtCellPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Cell Phone"
+                android:inputType="number"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="12sp" />
+    </LinearLayout>
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="2dp">
+
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:text="Work Phone"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="12sp"            />
+
+        <EditText
+            android:id="@+id/txtWorkPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Work Phone"
+            android:inputType="number"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="12sp" />
+    </LinearLayout>
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="2dp">
+
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:text="Work Place"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="12sp"            />
+
+        <EditText
+            android:id="@+id/txtWorkPlace"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Work Place"
+            android:inputType="text"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="12sp" />
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="2dp">
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:text="Email"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="12sp"            />
+
+            <EditText
+                android:id="@+id/txtEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="12sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="2dp">
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:text="Address"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="12sp"            />
+            <CheckBox
+                android:id="@+id/chkSameAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="12dp"
+                android:onClick="onCheckboxClicked"
+                android:text="Same address with student" />
+
+        </LinearLayout>
+        <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/tbAddress"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:stretchColumns="*"
+            android:layout_marginLeft="10dp"> <!-- stretch the second column of the layout-->
+
+            <!-- first row of the table layout-->
+            <TableRow
+
+                android:id="@+id/firstRow1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:text="Apt Number"
+                    android:textAlignment="textEnd"
+                    android:paddingRight="5dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="10sp"            />
+
+                <EditText
+                    android:id="@+id/txtContactAptNo"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Apt Number"
+                    android:inputType="textShortMessage"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="10sp" />
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:text="Street Number"
+                    android:textAlignment="textEnd"
+                    android:paddingRight="5dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="10sp"            />
+
+                <EditText
+                    android:id="@+id/txtContactStrNo"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Street Number"
+                    android:inputType="number"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="10sp" />
+            </TableRow>
+            <TableRow
+                android:id="@+id/firstRow2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:text="Street"
+                    android:textAlignment="textEnd"
+                    android:paddingRight="5dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="10sp"            />
+
+                <EditText
+                    android:id="@+id/txtContactStreet"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Street Address"
+                    android:inputType="textShortMessage"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="10sp" />
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:textAlignment="textEnd"
+                    android:text="City"
+                    android:paddingRight="5dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="10sp"            />
+
+                <EditText
+                    android:id="@+id/txtContactCity"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="City"
+                    android:inputType="textShortMessage"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="10sp" />
+            </TableRow>
+            <TableRow
+                android:id="@+id/firstRow3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:text="Province"
+                    android:textAlignment="textEnd"
+                    android:paddingRight="5dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="10sp"            />
+
+                <Spinner
+                    android:id="@+id/spContactProv"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Province"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="10sp" />
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:text="Postal Code"
+                    android:textAlignment="textEnd"
+                    android:paddingRight="5dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="10sp"            />
+
+                <EditText
+                    android:id="@+id/txtContactPostCode"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Postal Code"
+                    android:inputType="textShortMessage"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="10sp" />
+            </TableRow>
+        </TableLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="2dp">
+
+            <CheckBox
+                android:id="@+id/chkActiveContact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="12dp"
+                android:onClick="onCheckboxClicked"
+                android:text="Active"
+                android:checked="true"/>
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/showErrors"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"            >
+
+            <Button
+                android:id="@+id/btnStudentContact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add Contact"/>
+            <Button
+                android:id="@+id/btnInactiveContact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Inactivate Contact"
+                android:visibility="gone"/>
+            <Button
+                android:id="@+id/btnActiveContact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Activate Contact"
+                android:visibility="gone"/>
+            <Button
+            android:id="@+id/btnModifyContact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:visibility="gone"/>
+            <Button
+                android:id="@+id/btnContactCancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cancel"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
+
+
+
+
+
+
+
+
+
+
+
+
+

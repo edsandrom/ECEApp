@@ -1,0 +1,1478 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true"
+    android:scrollbars="vertical"
+    android:id="@+id/rootAddstudent">
+<LinearLayout
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            android:layout_gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="ADD NEW STUDENT"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="end">
+
+
+
+        <Button
+            android:visibility="gone"
+            android:id="@+id/btnAddStudent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Student"
+            />
+        <Button
+            android:id="@+id/btnModifyStudent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:text="Modify" />
+        <Button
+            android:id="@+id/btnSaveAddingStudent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:visibility="visible"/>
+        <Button
+            android:id="@+id/btnSaveModifyingStudent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:visibility="gone"/>
+        <Button
+            android:id="@+id/btnCancelModifyingStudent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:visibility="gone"/>
+        <Button
+            android:id="@+id/btnCancelAddStudent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="1dp"
+        android:layout_gravity="end"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Daycare"
+            android:textSize="12dp" />
+        <Spinner
+            android:id="@+id/spDaycare"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:hint="Daycare"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="10sp" />
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="2dp">
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:text="@string/first_name_student"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="12sp"
+
+                />
+
+            <EditText
+                android:id="@+id/txtStuFirstName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/first_name_hint"
+                android:inputType="textPersonName"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="10sp" />
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="2dp">
+
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:text="Last Name"
+            android:textSize="12sp"
+            android:textColor="@color/colorPrimaryDark"
+            />
+            <EditText
+                android:id="@+id/txtStuLastname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Last Name"
+            android:inputType="textPersonName"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="10sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="2dp">
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:text="Date of birth"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="12sp"            />
+
+        <EditText
+            android:id="@+id/txtStuDOB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="YYYY-MM-DD"
+            android:inputType="date"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="10sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="2dp">
+
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:text="Medicare #"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="12sp" />
+
+        <EditText
+                android:id="@+id/txtMedicareNo"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:hint="Medicare Number"
+                android:inputType="number"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="10sp" />
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:text="Expiry Date"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="12sp"            />
+
+            <EditText
+                android:id="@+id/txtMedicareExpiryDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="YYYY-MM-DD"
+                android:inputType="date"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="10sp" />
+
+</LinearLayout>>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="2dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:text="Address"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="12sp"            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="2dp">
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:text="Apt Number"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="10sp"            />
+
+        <EditText
+            android:id="@+id/txtAptNo"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:hint="Apt Number"
+            android:inputType="textShortMessage"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="10sp" />
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:text="Street Number"
+            android:textAlignment="textEnd"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="10sp"            />
+
+        <EditText
+            android:id="@+id/txtStrNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Street Number"
+            android:inputType="number"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="10sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="2dp">
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:text="Street"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="10sp"            />
+
+        <EditText
+            android:id="@+id/txtStreet"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:hint="Street Address"
+            android:inputType="textShortMessage"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="10sp" />
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:textAlignment="textEnd"
+            android:text="City"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="10sp"            />
+
+        <EditText
+            android:id="@+id/txtCity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="City"
+            android:inputType="textShortMessage"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="10sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="2dp">
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:text="Province"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="10sp"            />
+
+        <Spinner
+            android:id="@+id/spProv"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:hint="Province"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="10sp" />
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:textAlignment="textEnd"
+            android:text="Postal Code"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="10sp"            />
+
+        <EditText
+            android:id="@+id/txtPostCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Postal Code"
+            android:inputType="textShortMessage"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="10sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="2dp"
+        >
+        <Button
+            android:id="@+id/btnAddContact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Contacts"
+            android:textSize="14dp"
+            android:textStyle=""
+            android:textAllCaps="false"
+
+            />
+
+        <TextView
+            android:id="@+id/tvAddContact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Parent/Guardian, people who have permission to pickup this child and two emergency contacts (other than parents/guardians)"
+            android:textSize="12dp" />
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+
+        android:id="@+id/rlContacts"
+        >
+
+        <ListView
+            android:id="@+id/contactListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            ></ListView>
+
+        <View
+            android:id="@+id/customView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@android:color/transparent" />
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="2dp"
+        >
+        <Button
+            android:id="@+id/btnAddNonAuthorized"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Non-Authorized Pickup"
+            android:textSize="12dp"
+            android:textStyle=""
+            android:textAllCaps="false"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            android:text="People who do not have permission to pickup this child"
+            android:textSize="12dp"/>
+
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/rlNonAuthorized"
+        >
+
+        <ListView
+            android:id="@+id/nonAuthorizedListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            ></ListView>
+
+        <View
+            android:id="@+id/customView1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@android:color/transparent" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="2dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:text="Child's health record"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="14dp"            />
+    </LinearLayout>
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/tbChildHealthRecord"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:stretchColumns="*"> <!-- stretch the second column of the layout-->
+    <!-- first row of the table layout-->
+    <LinearLayout>
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="1dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:text="ALLERGY ALERT"
+            android:textAlignment="textStart"
+            android:paddingRight="2dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="12dp"            />
+        <EditText
+            android:id="@+id/txtAllergyAlert"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="List any serious allergies"
+            android:inputType="textPersonName"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="12dp" />
+    </LinearLayout>>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="1dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:text="Are any of the above allergies severe enough to require Epipen, medications, or emergency treatment?"
+            android:textAlignment="textStart"
+            android:paddingRight="2dp"
+            android:textSize="12dp"            />
+    </LinearLayout>
+        <RadioGroup
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/isEmergencyTreatment"
+                android:textSize="12dp"
+                android:text="Yes"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/isNotEmergencyTreatment"
+                android:textSize="10dp"
+                android:text="No  "/>
+            <Button
+                android:id="@+id/btnEmergencyPlane"
+                android:visibility="invisible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:textSize="12dp"
+                android:paddingLeft="10dp"
+                android:text="Complete Allergy Management and Emergency Plan"/>
+
+        </RadioGroup>
+
+    <LinearLayout>
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="1dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:text="Other Allergies"
+            android:textAlignment="textStart"
+            android:paddingRight="2dp"
+            android:textSize="12dp"            />
+        <EditText
+            android:id="@+id/txtOtherAllergies"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="List any food, medication or contact allergies (non-life threatening"
+            android:inputType="textPersonName"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="12dp" />
+    </LinearLayout>>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="1dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:text="Does this child require any essential routine services on a regular basis as part of a daily routine such as, catheterization, special hygiene procedures, on-going administration of medication, or ongoing observation of certain health conditions, such as diabetes, to determine when intervention is needed?"
+                android:textAlignment="textStart"
+                android:textSize="12dp"            />
+        </LinearLayout>
+        <RadioGroup
+
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/isRoutineService"
+                android:textSize="10dp"
+                android:text="Yes"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/isNotRoutineService"
+                android:textSize="10dp"
+                android:text="No  "/>
+            <Button
+                android:visibility="gone"
+                android:id="@+id/btnEssentialRoutineServices"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:textSize="10dp"
+                android:paddingLeft="10dp"
+                android:text="Complete Essential Routine Services and Emergency Plan"/>
+
+        </RadioGroup>
+
+
+    </TableLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="2dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:text="Medical Practitioner"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="12dp"            />
+    </LinearLayout>
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/tbPractitioner"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:stretchColumns="*"> <!-- stretch the second column of the layout-->
+        <!-- first row of the table layout-->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:text="First Name"
+                android:textAlignment="textEnd"
+                android:paddingRight="2dp"
+                android:textSize="12dp"            />
+
+            <EditText
+                android:id="@+id/txtPracFName"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="First Name"
+                android:inputType="textPersonName"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="12dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:text="Last Name"
+                android:textAlignment="textEnd"
+                android:paddingRight="2dp"
+                android:textSize="12dp"            />
+
+            <EditText
+                android:id="@+id/txtPracLName"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="Last Name"
+                android:textColor="@color/colorPrimaryDark"
+                android:inputType="textPersonName"
+                android:textSize="12dp" />
+        </TableRow>
+        <TableRow
+            android:id="@+id/firstRow"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:text="Phone Number"
+                android:textAlignment="textEnd"
+                android:paddingRight="2dp"
+                android:textSize="12dp"            />
+
+            <EditText
+                android:id="@+id/txtPracPhone"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="Phone Number"
+                android:inputType="phone"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="12dp" />
+
+        </TableRow>
+        <TableRow
+
+            android:id="@+id/firstRow1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:text="Apt No."
+                android:textAlignment="textEnd"
+                android:paddingRight="2dp"
+                android:textSize="12dp"            />
+
+            <EditText
+                android:id="@+id/txtPracAptNo"
+                android:text=""
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="Apt No."
+                android:inputType="textShortMessage"
+                android:textSize="12dp" />
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:text="Street No."
+                android:textAlignment="textEnd"
+                android:paddingRight="2dp"
+                android:textSize="12dp"            />
+
+            <EditText
+                android:id="@+id/txtPracStrNo"
+                android:text=""
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="Street No."
+                android:inputType="number"
+                android:textSize="12dp" />
+        </TableRow>
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:text="Street"
+                android:textAlignment="textEnd"
+                android:paddingRight="2dp"
+                android:textSize="12dp"            />
+
+            <EditText
+                android:id="@+id/txtPracStreet"
+                android:text=""
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="Street"
+                android:inputType="textShortMessage"
+                android:textSize="12dp" />
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:textAlignment="textEnd"
+                android:text="City"
+                android:paddingRight="2dp"
+                android:textSize="12dp"            />
+
+            <EditText
+                android:id="@+id/txtPracCity"
+                android:text=""
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="City"
+                android:inputType="textShortMessage"
+                android:textSize="12dp" />
+        </TableRow>
+        <TableRow
+            android:id="@+id/firstRow2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:text="Province"
+                android:textAlignment="textEnd"
+                android:paddingRight="2dp"
+                android:textSize="12dp"            />
+
+            <Spinner
+                android:id="@+id/spPracProv"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="Province"
+                android:textSize="12dp" />
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:text="Postal Code"
+                android:textAlignment="textEnd"
+                android:paddingRight="2dp"
+                android:textSize="12dp"            />
+
+            <EditText
+                android:id="@+id/txtPracPostCode"
+                android:text=""
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="Postal Code"
+                android:inputType="textShortMessage"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="12dp" />
+        </TableRow>
+
+    </TableLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="1dp">
+        <TextView
+        android:layout_width="90dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:text="Medical History"
+        android:textAlignment="textStart"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="12sp"            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:text="indicate if your child has HAD any of the following:"
+            android:textAlignment="textStart"
+            android:textSize="12dp"            />
+    </LinearLayout>
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/medicalHistory"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:stretchColumns="*"> <!-- stretch the second column of the layout-->
+    <!-- first row of the table layout-->
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <CheckBox
+            android:id="@+id/chkMeasles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12dp"
+            android:text="Measles" />
+        <CheckBox
+            android:id="@+id/chkMumps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12dp"
+            android:text="Measles" />
+        <CheckBox
+            android:id="@+id/chkMeningitis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12dp"
+            android:text="Meningitis" />
+    </TableRow>
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <CheckBox
+                android:id="@+id/chkRubella"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:text="Rubella" />
+            <CheckBox
+                android:id="@+id/chkChickenPox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:text="Chicken Pox" />
+            <CheckBox
+                android:id="@+id/chkPertussis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:text="Pertussis (Whooping Cough)" />
+        </TableRow>
+    </TableLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="1dp">
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:text="Health Status"
+            android:textAlignment="textStart"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="12dp"            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:text="Indicate if your child HAS any of the following:"
+            android:textAlignment="textStart"
+            android:textSize="12dp"            />
+    </LinearLayout>
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/healthStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*"> <!-- stretch the second column of the layout-->
+        <!-- first row of the table layout-->
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <CheckBox
+                android:id="@+id/chkAsthma"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:text="Asthma" />
+            <CheckBox
+                android:id="@+id/chkEczemaPsoriasis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:text="Eczema/Psoriasis" />
+            <CheckBox
+                android:id="@+id/chkDiabetes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:text="Diabetes" />
+            <CheckBox
+                android:id="@+id/chkEpilepsySeizures"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:text="Epilepsy/Seizures" />
+        </TableRow>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="1dp">
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:text="Other"
+                android:textAlignment="textStart"
+                android:textSize="12dp"            />
+            <EditText
+                android:id="@+id/txthealthStatusOther1"
+                android:text=""
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textSize="12dp" />
+
+        </LinearLayout>>
+    </TableLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="1dp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:text="Ongoing Medical Treatment"
+        android:textAlignment="textStart"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="12dp"            />
+    </LinearLayout>
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/ongoingMedicalTreatment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*"> <!-- stretch the second column of the layout-->
+        <!-- first row of the table layout-->
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:text="Name of medication"
+                android:textAlignment="textStart"
+                android:textSize="12dp"            />
+            <EditText
+                android:id="@+id/txtmedication1"
+                android:text="N/A"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textSize="12dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:text="Dosage"
+                android:textAlignment="textStart"
+                android:textSize="12dp"            />
+            <EditText
+                android:id="@+id/txtDosage1"
+                android:text=""
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textSize="12dp" />
+        </TableRow>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:text="Condition being treated"
+                android:textAlignment="textStart"
+                android:textSize="12dp"            />
+            <EditText
+                android:id="@+id/txtCondition1"
+                android:text=""
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textSize="12dp" />
+        </LinearLayout>
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:text="Name of medication"
+                android:textAlignment="textStart"
+                android:textSize="12dp"            />
+            <EditText
+                android:id="@+id/txtmedication2"
+                android:text=""
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint=""
+                android:inputType="text"
+                android:textSize="12dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:text="Dosage"
+                android:textAlignment="textStart"
+                android:textSize="12dp"            />
+            <EditText
+                android:id="@+id/txtDosage2"
+                android:text=""
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textSize="12dp" />
+        </TableRow>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:text="Condition being treated"
+                android:textAlignment="textStart"
+                android:textSize="12dp"            />
+            <EditText
+                android:id="@+id/txtCondition2"
+                android:text=""
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textSize="12dp" />
+        </LinearLayout>
+    </TableLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="1dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:text="Are there any activities in which your child cannot medically participate?"
+            android:textAlignment="textStart"
+            android:textSize="12dp"            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="1dp">
+        <EditText
+        android:id="@+id/txtrestrictedActivities"
+        android:text=""
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:textSize="12dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="1dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:text="List any dietary restrictions (including those for medical, cultural, religious reasons):"
+            android:textAlignment="textStart"
+            android:textSize="12dp"            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="1dp">
+        <EditText
+            android:id="@+id/txtDietaryRestrictions"
+            android:text=""
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:textSize="12dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="2dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:text="Preschool/childcare history"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="14dp"            />
+    </LinearLayout>
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/tbPreschoolHistory"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:stretchColumns="*">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="1dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:text="Has your child attended preschool/childcare before?"
+                android:textAlignment="textStart"
+                android:paddingRight="2dp"
+                android:textSize="12dp"            />
+        </LinearLayout>
+        <RadioGroup
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/isPreAttendant"
+                android:onClick="onRadioButtonClicked"
+                android:textSize="12dp"
+                android:text="Yes"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/isNotPreAttendant"
+                android:onClick="onRadioButtonClicked"
+                android:textSize="12dp"
+                android:text="No  "/>
+        </RadioGroup>
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingRight="2dp"
+                android:text="How long?"
+                android:textAlignment="textStart"
+                android:textSize="12dp" />
+            <RadioGroup
+                android:id="@+id/rgHowlong"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rdo_6months"
+                    android:textSize="12dp"
+                    android:text="6 months"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rdo_1year"
+                    android:textSize="12dp"
+                    android:text="1 year  "/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rdo_2years"
+                    android:textSize="12dp"
+                    android:text="2 years"/>
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rdomorethan_2years"
+                    android:textSize="12dp"
+                    android:text="more than 2 years"/>
+            </RadioGroup>
+
+
+        </TableRow>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="1dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:text="Child's experience"
+                android:textAlignment="textStart"
+                android:paddingRight="2dp"
+                android:textSize="12dp"            />
+            <EditText
+                android:id="@+id/txtChildExperience"
+                android:text=""
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textSize="12dp" />
+        </LinearLayout>
+
+    </TableLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="2dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:text="Child Development"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="14dp"            />
+    </LinearLayout>
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/tbChildDevelopment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:stretchColumns="*">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="1dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:text="Self Help: Need help"
+                android:textAlignment="textStart"
+                android:paddingRight="2dp"
+                android:textSize="12dp"            />
+        </LinearLayout>
+
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="1dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:text="Dressing/Undressing"
+            android:textAlignment="textStart"
+            android:paddingRight="2dp"
+            android:textSize="12dp"            />
+        <EditText
+            android:id="@+id/txtDressingHelp"
+            android:text=""
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:textSize="12dp" />
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="1dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:text="Eating"
+                android:textAlignment="textStart"
+                android:paddingRight="2dp"
+                android:textSize="12dp"            />
+            <EditText
+                android:id="@+id/txtEatingHelp"
+                android:text=""
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textSize="12dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="1dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:text="Toileting"
+                android:textAlignment="textStart"
+                android:paddingRight="2dp"
+                android:textSize="12dp"            />
+            <EditText
+                android:id="@+id/txtToiletingHelp"
+                android:text=""
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textSize="12dp" />
+        </LinearLayout>
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="1dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:text="Handwashing/Toothbrushing"
+            android:textAlignment="textStart"
+            android:paddingRight="2dp"
+            android:textSize="12dp"            />
+        <EditText
+            android:id="@+id/txtHandwashingToothbrushingHelp"
+            android:text=""
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:textSize="12dp" />
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="1dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:text="Other"
+                android:textAlignment="textStart"
+                android:paddingRight="2dp"
+                android:textSize="12dp"            />
+            <EditText
+                android:id="@+id/txtOtherHelp"
+                android:text=""
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textSize="12dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="1dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:text="Are there any hints/suggestions that will make your child’s transition to the facility a positive one?"
+                android:textAlignment="textStart"
+                android:paddingRight="2dp"
+                android:textSize="12dp"            />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="1dp">
+            <EditText
+                android:id="@+id/txtHints"
+                android:text=""
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textSize="12dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="1dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:text="What does your child like to do? "
+                android:textAlignment="textStart"
+                android:paddingRight="2dp"
+                android:textSize="12dp"            />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="1dp">
+            <EditText
+                android:id="@+id/txtLikeDo"
+                android:text=""
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textSize="12dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="1dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:text="Is there anything else you would like to share with us about your child?"
+                android:textAlignment="textStart"
+                android:paddingRight="2dp"
+                android:textSize="12dp"            />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="1dp">
+            <EditText
+                android:id="@+id/txtExtraSharing"
+                android:text=""
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textSize="12dp" />
+        </LinearLayout>
+
+    </TableLayout>
+
+
+
+</LinearLayout>
+
+
+</ScrollView>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
